@@ -6,10 +6,10 @@ output:
     toc_float: true
 ---
 
-# This is jingtong's website
+### This is jingtong's website
 
 ![](Second%20senior%20brother.png){width="300px"}
 
-# Link to my Github
+### Link to my Github
 
 [jt4977](https://github.com/jt4977/jt4977.github.io)

@@ -1,0 +1,69 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(plotly)
+library(p8105.datasets)
+library(tidyverse)
+```
+
+```{r}
+data("rest_inspec")
+rest_inspec =
+  rest_inspec %>%
+  mutate(score_plus = score * 10) %>%
+  select(boro, violation_code, score_plus, grade, latitude, longitude, cuisine_description) %>%
+  filter(
+    boro == "Manhattan",
+    score_plus %in% 100:500,
+    cuisine_description =="American"
+  )%>%
+  drop_na(grade,latitude,longitude)
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Figure 1: The Geographic Distribution of Restaurant with violation types and grades
+
+```{r}
+rest_inspec %>%
+  mutate(
+    text_label = str_c("Violation: ", violation_code, "\nGrade: ", grade)) %>%
+  plot_ly(
+    x = ~latitude, y = ~longitude, color = ~score_plus, text = ~text_label,
+    alpha = .5, type = "scatter", mode = "markers"
+  ) %>%
+  layout(
+    yaxis = list(range = c(-74.05, -73.9), title = "longitude"),
+    xaxis = list(range = c(40.65, 40.87), title = "latitude")
+  )
+```
+
+Column {data-width=500}
+-----------------------------------------------------------------------
+
+### Figure 2: Violation types ordered with scores
+
+```{r}
+rest_inspec %>%
+  mutate(violation_code = fct_reorder(violation_code, score_plus)) %>%
+ plot_ly(x = ~violation_code, y = ~score_plus, color = ~violation_code, colors = "viridis", type = "box")
+
+```
+
+### Figure 3: The distribution of different violation codes
+
+```{r}
+rest_inspec %>%
+  count(violation_code) %>%
+  mutate(violation_code = fct_reorder(violation_code, n)) %>%
+ plot_ly(x = ~violation_code, y = ~n, color = ~violation_code, colors = "viridis", type = "bar")
+```
+

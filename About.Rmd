@@ -24,7 +24,7 @@ output:
  * **SAS Statistical Procedure Development** | Peking University Institute for Advanced Information Technology.
  * **Statistical Assistant Intern** | First Affiliated Hospital of Zhengzhou University
 
-### ACTIVITIES
+### Activities
  * Finished **half-marathon** (about **22km**) within 2 h 24 min 51s.
  * Completed The Journey of Xuanzang, a **112km** trek through the Gobi desert.
  * Completed a **240 km**, two-day-and-one-night cycling trip around Shaolin Temple.

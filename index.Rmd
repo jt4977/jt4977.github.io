@@ -10,6 +10,9 @@ output:
 
 ![](Second%20senior%20brother.png){width="300px"}
 
-### Link to my Github
+### Hi!
 
-[jt4977](https://github.com/jt4977/jt4977.github.io)
+I am a second year biostatistic student in Columbia mailman school of public health.
+
+To learn more about me, click [here](about.html)
+

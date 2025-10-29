@@ -1,0 +1,15 @@
+---
+title: "Jingtong He"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# This is jingtong's website
+
+![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+
+# Link to page About
+
+[About me](About.html)

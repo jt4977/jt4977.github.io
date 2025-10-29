@@ -1,0 +1,13 @@
+---
+title: "About me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+### Education Experience
+
+Columbia University Mailman School of Public Health, the United States MPH in Biostatistics｜First Year GPA: 4.00.[09/2024 – 05/2026]{style="float:right;"}\
+
+Xi'an Jiaotong-Liverpool University (XJTLU), China BSc in Financial Mathematics \| Major GPA: 3.83/4.0 \| Upper Second Class Degree with honours.[09/2020 – 06/2024]{style="float:right;"}\

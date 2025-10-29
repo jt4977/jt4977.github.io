@@ -8,8 +8,8 @@ output:
 
 # This is jingtong's website
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+![](Second%20senior%20brother.png){width="300px"}
 
-# Link to page About
+# Link to my Github
 
-[About me](About.html)
+[jt4977](https://github.com/jt4977/jt4977.github.io)

@@ -14,5 +14,5 @@ output:
 
 I am a second year biostatistic student in Columbia mailman school of public health.
 
-To learn more about me, click [here](about.html)
+To learn more about me, click [here](About.html)
 
